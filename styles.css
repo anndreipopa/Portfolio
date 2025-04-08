@@ -111,7 +111,7 @@ body{
     height: 100%;
     position: absolute;
     background: black;
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: 2;
 }
 .gradientbg{
@@ -171,7 +171,7 @@ body{
 .subtagline{
     color: white;
     font-family: Poppins, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
     opacity: 0.95;
     line-height: 1.2;
@@ -196,25 +196,22 @@ body{
     text-decoration: none;
     
 }
-
 .romb{
-    width: 150px;
-    height: 150px;
-    background-color: #03624c;
-    transform: rotate(45deg);
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 125%;
-    border-radius: 25px;
     animation: float 3s ease-in-out infinite;
+
 }
 @keyframes float{
     0%{
-        transform: translateY(0) rotate(45deg);
+        transform: translateY(0);
     }
     50%{
-        transform: translateY(-10px) rotate(45deg);
+        transform: translateY(-10px);
     }
     100%{
-        transform: translateY(0) rotate(45deg);
+        transform: translateY(0);
     }
 }
