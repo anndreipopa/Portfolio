@@ -217,8 +217,14 @@ body{
         transform: translateY(0);
     }
 }
+/* SKILLS SECTION */
+
+.skillstitle, .skillssubtitle{
+    padding-left: 1rem;
+    line-height: 1rem;
+}
 .skillcard{
-    width: 90%;
+    width: 94%;
     height:10rem;
     animation: fadein 1.5s ease-in-out;
     background: #072424;
@@ -240,4 +246,5 @@ body{
     display: flex;
     flex-direction: column;;
     align-items: center;
+    margin-top: 2rem;
 }
