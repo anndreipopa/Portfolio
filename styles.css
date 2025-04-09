@@ -219,6 +219,11 @@ body{
 }
 /* SKILLS SECTION */
 
+#Skills{
+    scroll-margin-top: 75px;
+
+}
+
 .skillstitle, .skillssubtitle{
     padding-left: 1rem;
     line-height: 1rem;
