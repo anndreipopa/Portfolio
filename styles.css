@@ -245,7 +245,8 @@ body{
     top: -1.6rem;
     background-color: #030f0f;
     padding: 0.2em 0.4em;
-    border-radius: 15px;
+    border-radius: 0 0 10px 0;
+    border-bottom: 2px solid #00df82;
 }
 .skillcard p{
     color: #00df82;
