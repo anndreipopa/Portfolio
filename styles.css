@@ -230,17 +230,22 @@ body{
 }
 .skillcard{
     width: 94%;
-    height:10rem;
+    min-height:10rem;
     animation: fadein 1.5s ease-in-out;
     background: #072424;
     border-radius: 10px;
+    position: relative;
+    padding-top: 1.2rem;
 
 }
 .cardtitle{
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: -0.001em;
-    display: flex;
+    position: absolute;
+    top: -1.6rem;
+    background-color: #030f0f;
+    padding: 0.2em 0.4em;
+    border-radius: 15px;
 }
 .skillcard p{
     color: #00df82;
@@ -252,4 +257,5 @@ body{
     flex-direction: column;;
     align-items: center;
     margin-top: 2rem;
+    gap: 3rem;
 }
