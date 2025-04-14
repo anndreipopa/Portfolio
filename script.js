@@ -19,3 +19,28 @@ links.forEach(link => {
         }
     });
 });
+
+//Animatii
+
+const cardtitles = document.querySelectorAll('.skillcard');
+
+if (cardtitles.length > 0) {
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
+        });
+    }, {
+        threshold: 0.02
+    });
+
+    cardtitles.forEach(title => {
+        observer.observe(title);
+    });
+
+} else {
+    console.warn("Intersection Observer: No elements found with the class '.cardtitle'. Animation will not work.");
+}

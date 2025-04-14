@@ -231,11 +231,18 @@ body{
 .skillcard{
     width: 94%;
     min-height:10rem;
-    animation: fadein 1.5s ease-in-out;
     background: #072424;
     border-radius: 10px;
     position: relative;
     padding-top: 1.2rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+
+}
+.skillcard.active{
+    opacity: 1;
+    transform: translateX(0);
 
 }
 .cardtitle{
@@ -246,6 +253,7 @@ body{
     background-color: #030f0f;
     padding: 0.2em 0.4em;
     border-radius: 0 0 10px 0;
+    transition: border-bottom 0.3s ease;
     border-bottom: 2px solid #00df82;
 }
 .skillcard p{
@@ -259,4 +267,28 @@ body{
     align-items: center;
     margin-top: 2rem;
     gap: 3rem;
+}
+.techlogos{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.techlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #01c071;
+    font-size: 14px;
+}
+.techlogo img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1px;
+    padding-left: 8px;
+}
+.techlogo p{
+    text-align: center;
+    margin-top: 5px;
 }
