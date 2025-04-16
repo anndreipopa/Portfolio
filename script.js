@@ -22,9 +22,9 @@ links.forEach(link => {
 
 //Animatii
 
-const cardtitles = document.querySelectorAll('.skillcard');
+const container = document.querySelectorAll('.skillcard');
 
-if (cardtitles.length > 0) {
+if (container.length > 0) {
     const observer = new IntersectionObserver((entries, observerInstance) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -37,10 +37,8 @@ if (cardtitles.length > 0) {
         threshold: 0.02
     });
 
-    cardtitles.forEach(title => {
+    container.forEach(title => {
         observer.observe(title);
     });
 
-} else {
-    console.warn("Intersection Observer: No elements found with the class '.cardtitle'. Animation will not work.");
 }
