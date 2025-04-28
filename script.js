@@ -42,3 +42,24 @@ if (container.length > 0) {
     });
 
 }
+
+/*const container1 = document.querySelectorAll('.projectcard');
+
+if (container1.length > 0) {
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
+        });
+    }, {
+        threshold: 0.02
+    });
+
+    container1.forEach(title => {
+        observer.observe(title);
+    });
+
+} */
