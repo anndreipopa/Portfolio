@@ -312,3 +312,13 @@ span{
 
 /* PROJECTS SECTION */
 
+.projects{
+    scroll-margin-top: 75px;
+    background-color: #072424;
+    margin-top: 5rem;
+}
+.projectstitle, .projectssubtitle{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    line-height: 1rem;
+}
