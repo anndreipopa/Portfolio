@@ -422,3 +422,108 @@ span{
     transition: border-color 0.4s ease;
 
 }
+
+
+/* contact form */
+.contact {
+    padding: 80px 20px;
+    background-color: #030f0f;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform-container {
+    background-color: #0d2b2b;
+    padding: 35px 45px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #03624c;
+}
+
+.contactform-container .title {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.2em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #a0d8cf;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: #021a1a;
+    border: 1px solid #037d60;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group textarea::placeholder {
+    color: #4a7c74;
+    opacity: 0.8;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #05c799;
+    box-shadow: 0 0 0 3px rgba(5, 199, 153, 0.25);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: #03624c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #048b6b;
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+}
