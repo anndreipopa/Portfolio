@@ -313,37 +313,112 @@ span{
 /* PROJECTS SECTION */
 
 .projects{
-    scroll-margin-top: 75px;
-    background-color: #072424;
-    margin-top: 5rem;
+    padding: 60px 20px;
+    text-align: center;
+    background-color:#030f0f;
+    font-family: 'Poppins', sans-serif;
 }
-.projectstitle, .projectssubtitle{
-    padding-top: 1rem;
-    padding-left: 1rem;
-    line-height: 1rem;
+.title{
+    text-align: left;
+    padding-bottom: 1rem;
 }
-.projectssubtitle{
-    padding-top: 0;
-}
-.projectcards{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    align-items: center;
-}
-.projectcard{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-around;
+.project-card{
     position: relative;
-    border: 4px solid #03624c;
-    width: 95%;
-    height: 100%;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    border-radius: 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 6px solid #03624c;
+    transition: detailedview 1s ease;
 }
-.projectcard.active{
+.project-card.is-active{
+    background-color:#03624c;
+}
+.project-image{
+    display: block;
+    width: 100%;
+    height: auto;
     opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    visibility: visible;
+    transition: opacity 1s ease, visibility 1s ease 0.3s;
+}
+.project-card.is-active .project-image{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 1s ease 0.2s;
+}
+
+/* detailed section */
+
+.project-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px) scale(0.98);
+    transition: opacity 0.3s ease 0.1s, visibility 1s ease 0.4s, transform 0.3s ease 0.1s;
+}
+.project-card.is-active .project-details{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1)
+}
+.project-details h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+.project-details p{
+    font-size: 1.15em;
+    line-height: 1;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.project-details .website-button{
+    display: inline-block;
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.project-details .website-button:hover{
+    background-color: white;
+    color:#030f0f;
+}
+
+/*status badge*/
+
+.status-badge{
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: none;
+    background-color:#03624c;
+    color: white;
+    transition: border-color 0.4s ease;
+
 }

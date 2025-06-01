@@ -94,23 +94,6 @@
         </div>
       <div class="overcard">
           <div class="skillcard">
-            <h2 class="cardtitle">AI Integration</h2>
-            <p>Leveraging AI models and APIs to add intelligent features and automate tasks.
-              <div class="techlogos">
-                <div class="techlogo">
-                  <img src="icons/openicon.svg" alt="OpenAI icon">
-                    <p>OpenAI</p>
-                </div>
-                <div class="techlogo">
-                  <img src="icons/pythonicon.svg" alt="Python icon">
-                    <p>Python</p>
-                </div>
-            </div>
-            
-          </div>
-        </div>
-      <div class="overcard">
-          <div class="skillcard">
             <h2 class="cardtitle">Currently exploring</h2>
             <p>You never stop learning, so I'm exploring new technologies all the time.</p>
             <div class="techlogos">
@@ -136,32 +119,65 @@
         </div>
       </section>
     <!-- PROJECTS PAGE -->
-    <section id="Projects" class="projects">
-      <h2 class="projectstitle">My Projects</h2>
-      <p class="projectssubtitle">Here are the <span>best</span> projects I've worked on:</p>
-      <div class="projectcards">
-        <div class="projectcard">
-        <h3 class="projecttitle">Project 1</h3>
-        <img src="https://placehold.co/400x300" alt="Project 1 image" class="projectimage">
-        <p class="projectdescription">Description of project 1.</p>
-        <a href="#" class="projectlink">View Project</a>
-        </div>
-        <div class="projectcard">
-        <h3 class="projecttitle">Project 2</h3>
-        <img src="https://placehold.co/400x300" alt="Project 2 image" class="projectimage">
-        <p class="projectdescription">Description of project 2.</p>
-        <a href="#" class="projectlink">View Project</a>
-        </div>
-        <div class="projectcard">
-        <h3 class="projecttitle">Project 3</h3>
-        <img src="https://placehold.co/400x300" alt="Project 3 image" class="projectimage">
-        <p class="projectdescription">Description of project 3.</p>
-        <a href="#" class="projectlink">View Project</a>
-        </div>
-      </div>
+    <section class="projects" id="Projects">
+        <h2 class="title">My projects</h2>
+        <div class="project-card">
+          <img src="https://placehold.co/300x200" alt="Project Showcase Image" class="project-image">
+          <div class="project-details">
+            <h2>S.P.I.S.</h2>
+            <p>A smart irrigation system that uses sensor readings, weather forecasts and AI integration to optimize water use</p>
+            <a href="https://github.com/anndreipopa?tab=repositories" target="_blank" class="website-button">View on Github</a>
+          </div>
 
-      <section id="Contact" class="contact">
+          <span class="status-badge">In progress</span>
+        </div>
+        <div class="project-card">
+          <img src="https://placehold.co/300x200" alt="Project Showcase Image" class="project-image">
+          <div class="project-details">
+            <h2>Personal Portfolio</h2>
+            <p>A portfolio website made to showcase my work and skills</p>
+            <a href="https://github.com/anndreipopa?tab=repositories" target="_blank" class="website-button">View on Github</a>
+          </div>
+
+          <span class="status-badge">May 2025</span>
+        </div>
+    </section>
+
+
+    <!--CONTACT FORM-->
+    <section class="contact" id="Contact">
+      <div class="contactform-container">
+      <h2 class="title">Contact me</h2>
+      <form id="contactForm" netlify>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+
+         <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="yourname@email.com">
+        </div>
+
+         <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="How can I help?"></textarea>
+
+          <button type="submit" class="submit-button">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+    </section>
+
+
   </main>
+
+
   <footer>
     <div class="footer-content">
       <p>&copy; 2025 Andrei Popa. All rights reserved.</p>

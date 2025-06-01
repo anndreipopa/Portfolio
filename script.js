@@ -43,23 +43,32 @@ if (container.length > 0) {
 
 }
 
-/*const container1 = document.querySelectorAll('.projectcard');
+// script pt project section
 
-if (container1.length > 0) {
-    const observer = new IntersectionObserver((entries, observerInstance) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            } else {
-                entry.target.classList.remove('active');
-            }
-        });
-    }, {
-        threshold: 0.02
+document.addEventListener('DOMContentLoaded', () => {
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectCards.forEach(card => {
+
+
+    card.addEventListener('click', function(event) {
+
+      if (this.classList.contains('is-active')) {
+
+        const detailsSection = this.querySelector('.project-details');
+        if (detailsSection && detailsSection.contains(event.target) && event.target.closest('a')) {
+          return; 
+        }
+      }
+      this.classList.toggle('is-active');
     });
+  });
 
-    container1.forEach(title => {
-        observer.observe(title);
+  document.addEventListener('click', function(event) {
+    projectCards.forEach(card => {
+      if (card.classList.contains('is-active') && !card.contains(event.target)) {
+        card.classList.remove('is-active');
+      }
     });
-
-} */
+  });
+});
