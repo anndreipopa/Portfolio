@@ -153,6 +153,11 @@ body{
     position: relative;
     
 }
+.heroleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .mainintro{
     color: white;
     font-family: Syne, sans-serif;
@@ -182,6 +187,9 @@ span{
     line-height: 1.2;
     letter-spacing: 0.05em;
 }
+.break{
+    display: block;
+}
 @keyframes fadein{
     0%{
         opacity: 0;
@@ -203,8 +211,8 @@ span{
     
 }
 .romb{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     position: absolute;
     top: 120%;
     animation: float 3s ease-in-out infinite;
@@ -526,4 +534,117 @@ span{
 
 .submit-button:active {
     transform: translateY(1px);
+}
+
+
+/* styles for desktop */
+
+@media screen and (min-width: 1024px){
+
+.hamburger-menu{
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+    padding-bottom: 0;
+    gap: 3rem;
+}
+.nav-links li{
+    padding: 0;
+    text-align: right;
+}
+.nav-links a{
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+}
+.nav-links a:hover{
+    background-color: transparent;
+    color:#01c071;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #00df82;
+
+}
+.navbar-container{
+    justify-content: space-between;
+    max-width: 1280px;
+}
+
+
+/* HERO section desktop */
+
+  .hero {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .heroleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-basis: 58%;
+  }
+
+  .heroleft .mainintro {
+    margin-bottom: -2rem;
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
+  .heroleft .tagline {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .heroleft .subtagline {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  .break{
+    display: block;
+  }
+
+  .heroleft .cta-button {
+    margin-top: 1rem;
+  }
+
+  .romb {
+    flex-basis: 38%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    top: auto;
+    transform: translateY(0);
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .romb img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .cta-button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+  }
 }
