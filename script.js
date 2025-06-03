@@ -21,7 +21,6 @@ links.forEach(link => {
 });
 
 //Animatii
-
 const container = document.querySelectorAll('.skillcard');
 
 if (container.length > 0) {
