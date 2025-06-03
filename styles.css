@@ -322,13 +322,13 @@ span{
 
 .projects{
     padding: 60px 20px;
-    text-align: center;
+    text-align: left;
     background-color:#030f0f;
     font-family: 'Poppins', sans-serif;
 }
 .title{
     text-align: left;
-    padding-bottom: 1rem;
+    margin-bottom: -1rem;
 }
 .project-card{
     position: relative;
